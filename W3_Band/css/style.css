@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  font-family:  Arial;
+}
 
 #main{}
 #header{
@@ -11,27 +14,54 @@
 
 
 }
-#nav li{
+
+#nav >li{
   display: inline-block;
 
+}
+#nav li{
+  position: relative;
+}
+
+/*lay nhung the a la con truc tiep cua li, li la con truc tiep cua nav*/
+#nav >li >a{
+  color:  #fff;
+  text-transform: uppercase;
 }
 
 #nav li a{
-  color:  #fff;
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
+  display: block;
 }
 
-#nav li:hover a{
+#nav > li:hover > a,
+#nav .subnav > li:hover a {
   color: #000;
   background-color: #ccc;
-  display: inline-block;
+
 }
 
-#nav .subnav li{
-  display: none;
+#nav, .subnav{
+  list-style-type: none;
 }
-#slider{}
+
+#nav .subnav{
+  /*display: none;*/
+  position: absolute;
+  background-color: #fff;
+}
+
+#nav .subnav a{
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#slider{
+  min-height:  500px;
+  background-color: #333;
+}
 #content{}
 #footer{}
