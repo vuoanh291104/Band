@@ -9,8 +9,13 @@ html{
 
 #main{}
 #header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 46px;
   background-color: #000;
+  z-index: 1;
 
 
 }
@@ -93,8 +98,32 @@ html{
 }
 
 #slider{
-  min-height:  500px;
-  background-color: #333;
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url('/img/Slider/slider1.jpg') top center / cover no-repeat;
+
 }
+
+#slider .text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 47px;
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#slider .text-description{
+  font-size: 15px;
+  margin-top: 25px;
+}
+
 #content{}
 #footer{}
