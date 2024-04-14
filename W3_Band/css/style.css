@@ -226,4 +226,59 @@ html{
 .tour-section{
   background-color: #000;
 }
+
+.tour-section .place-item{
+
+}
+
+.places-list {
+  margin: 32px -8px 0;
+  padding-bottom: 48px;
+}
+.place-img{
+  display: block;
+  width: 100%;
+}
+.place-img:hover{
+  opacity: 0.6;
+}
+.place-item{
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 8px;
+}
+.place-item .place-body .place-buy-btn{
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.place-item .place-body .place-buy-btn:hover{
+  color: #000;
+  background-color: #ccc;
+}
+.place-body{
+  padding: 16px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+
+.place-time{
+  margin-top: 15px;
+  color: #757575;
+
+}
+.place-desc{
+  line-height: 1.4;
+  margin-top: 15px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
 #footer{}
