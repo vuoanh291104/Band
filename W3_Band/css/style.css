@@ -299,6 +299,7 @@ html{
 }
 .modal.open{
   display: flex;
+
 }
 
 .modal-container .modal-header{
@@ -331,6 +332,7 @@ html{
   max-width: calc(100% - 32px);
   min-height: 200px;
   position: relative;
+  animation: modalFadeIn ease .5s;
 }
 .modal-body .modal-label{
   display: flex;
@@ -369,4 +371,15 @@ html{
 }
 .modal-footer a{
   color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
