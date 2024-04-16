@@ -10,10 +10,29 @@ html{
 .clear{
   clear: both;
 }
-
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.colum{
+  float: left;
+  padding: 0 8px;
+}
+.colum-thir{
+  width: calc(100% / 3);
+}
+.colum-send{
+  width: 50%;
+}
+.text-center{
+  text-align: center !important;
+}
 :root{
   --text-color: #fff !important;
 }
+
+
+
 #main{}
 #header{
   position: fixed;
@@ -168,11 +187,7 @@ html{
   /*overflow: hidden;*/
 }
 
-#content .member-item{
-  float: left;
-  width: calc(100% /3);
-  text-align:  center;
-}
+
 
 #content .member-name{
   font-size: 15px;
@@ -232,7 +247,8 @@ html{
 }
 
 .places-list {
-  margin: 32px -8px 0;
+  margin-top: 32px;
+  margin-bottom: 0;
   padding-bottom: 48px;
 }
 .place-img{
@@ -243,11 +259,10 @@ html{
   opacity: 0.6;
 }
 .place-item{
-  float: left;
-  width: calc(100% / 3);
-  padding: 0 8px;
+
+
 }
-.place-item .place-body .place-buy-btn{
+.places-list .place-body .place-buy-btn{
   text-decoration: none;
   background-color: #000;
   color: #fff;
@@ -255,7 +270,7 @@ html{
   display: inline-block;
   margin-top: 15px;
 }
-.place-item .place-body .place-buy-btn:hover{
+.places-list .place-body .place-buy-btn:hover{
   color: #000;
   background-color: #ccc;
 }
