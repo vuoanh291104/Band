@@ -5,6 +5,7 @@
 }
 html{
   font-family:  Arial;
+  scroll-behavior: smooth;
 }
 
 .clear{
