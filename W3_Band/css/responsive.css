@@ -26,6 +26,20 @@
   #header .mobile-menu-btn{
     display: block;
   }
-
+  #header{
+    overflow: hidden;
+  }
+  #nav .subnav{
+    position: initial;
+    /*reset về giá trị mặc định*/
+    background-color: #333;
+  }
+  #nav .subnav a{
+    color: #fff;
+    padding: 5px 41px;
+  }
+  #nav li a{
+    padding:1px 24px;
+  }
 
 }
