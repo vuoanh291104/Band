@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Band</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="Fonts/themify-icons/themify-icons.css">
   <meta name="description" content="">
 
@@ -47,6 +48,10 @@
       <!--      Begin: Button search-->
       <div class="search-btn">
         <i class="search-icon ti-search"></i>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu-btn">
+        <i class="menu-icon ti-menu"></i>
       </div>
     </div>
 
@@ -243,6 +248,33 @@
     modalContainer.addEventListener('click',function (event){
       event.stopPropagation() //Dừng việc nổi bọt từ modalContainer
     })
+  </script>
+
+
+  <script>
+    var header = document.getElementById('header');
+    // console.log(header)
+    var mobileMenu = document.getElementById('mobile-menu');
+    var headerHeight= header.clientHeight;
+    mobileMenu.onclick = function (){
+      var isClosed = header.clientHeight === headerHeight;
+      if(isClosed){
+        header.style.height= 'auto';
+      }else {
+        header.style.height= null;
+      }
+    }
+    // tự động đóng khi chọn item trong menu
+
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for(var i=0 ; i <menuItems.length; i++){
+      var menuItem = menuItems[i];
+      menuItem.onclick = function (){
+        // console.log(this);
+        header.style.height=null;
+      }
+    }
+
   </script>
 
 </body>

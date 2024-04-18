@@ -57,7 +57,7 @@ html{
   height: 46px;
   background-color: #000;
   z-index: 1;
-
+  overflow: hidden;
 
 }
 
@@ -120,18 +120,29 @@ html{
 #nav .nav-arrow-down{
   font-size: 14px;
 }
-
+#header .mobile-menu-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
   float: right; /*mất tính kế thừa của block*/
   padding: 0 21px;
   cursor: pointer;
 }
-
+#header .mobile-menu-btn:hover{
+  background-color: #ccc;
+}
 #header .search-btn:hover{
   background-color: #f44336;
 
 }
-
+#header .mobile-menu-btn:hover .menu-icon{
+  color: #000;
+}
+#header .menu-icon,
 #header .search-icon{
   line-height: 46px;
   font-size: 20px;
