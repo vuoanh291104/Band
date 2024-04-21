@@ -298,6 +298,7 @@ html{
   padding: 11px 16px;
   display: inline-block;
   margin-top: 15px;
+  text-align: center;
 }
 .places-list .place-body .place-buy-btn:hover{
   color: #000;
